@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/c4e65789d5.js" crossorigin="anonymous"></script>
+    <title>Materi Artikel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="icon" href="../logo sub/sub 7-modified.png" type="image/gif" sizes="18x18">
+    <style>
+      body{
+        transition: 0.5s;
+      }
+      .navbar{
+        background-image: linear-gradient(80deg, blue, rgb(223, 205, 205));
+        color: white;
+        transition: 0.5s;
+      }
+      .jumbotron{
+        background-image: url('../img/gambar2.jpg');
+        box-sizing: border-box;
+        padding-top: 70px;
+        margin-bottom: 20px;
+        color: white;
+        transition: 0.5s;
+      }
+      .materi{
+        text-shadow: 4px 3px 2px rgb(124, 26, 26);
+      }
+      .akhir p a{
+        color: white;
+      }
+      .akhir{
+        background-image: linear-gradient(50deg,rgb(223, 205, 205), blue);
+        padding: 10px;
+        top: 10px;
+        transition: 0.5s;
+      }
+      .tombol{
+        padding-top: 20px;
+        padding-bottom: 25px;
+      }
+      .sub-isi pre{
+        max-width: 560;
+        text-align: left;
+      }
+      .isi{
+        border-radius: 20px;
+      }
+      /* tombol gelap terang */
+      .tombol{
+            border-radius: 10px;
+            padding: 5px;
+            outline: none;
+            background-color: rgb(156, 156, 137);
+            text-shadow: 4px 3px 2px black;
+            color:white;
+            cursor: pointer;
+            box-shadow: 4px 3px 2px black;
+        }
+        .tombol:hover{
+            background-color: rgb(41, 78, 240);
+            color: white;
+        }
+
+        /* dark mode */
+        #dark{
+          background-color: rgb(26, 22, 22);
+          color: white;
+        }
+        #dark .konten{
+          color: black;
+        }
+        #dark #head{
+          background-image: linear-gradient(50deg, rgb(70, 55, 55), black);
+          color: white;
+          
+        }
+        #dark #foot{
+          background-image: linear-gradient(50deg, rgb(70, 55, 55), black);
+          color: white;
+          
+        }
+        #dark #tron{
+          background-image: url('../img/tron-artikel.jpg');
+          transition: 0.5s;
+        }
+        /* akhir dark mode */
+
+        /* gelombang */
+        .waves {
+          position: relative;
+          width: 100%;
+          height: 15vh;
+          margin-bottom: -7px;
+          /*Fix for safari gap*/
+          min-height: 100px;
+          max-height: 150px;
+        }
+        .parallax > use {
+          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+        }
+
+        .parallax > use:nth-child(1) {
+          animation-delay: -2s;
+          animation-duration: 7s;
+        }
+
+        .parallax > use:nth-child(2) {
+          animation-delay: -3s;
+          animation-duration: 10s;
+        }
+
+        .parallax > use:nth-child(3) {
+          animation-delay: -4s;
+          animation-duration: 13s;
+        }
+
+        .parallax > use:nth-child(4) {
+          animation-delay: -5s;
+          animation-duration: 20s;
+        }
+
+        @keyframes move-forever {
+          0% {
+            transform: translate3d(-90px, 0, 0);
+          }
+
+          100% {
+            transform: translate3d(85px, 0, 0);
+          }
+        }
+    /* akhir gelombang */
+        
+    </style>
+  </head>
+  <body>
+  <!-- navbar -->
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg fixed-top " id="head">
+      <div class="container">
+        <a class="navbar-brand" href="#">SUB PITU 7</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"><i class="fa-solid fa-house-user"></i> Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book"></i> Materi</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="materi.html"><i class="fa-brands fa-readme"></i> Materi Artikel</a></li>
+                <li><a class="dropdown-item" href="../materi video/materiVideo.html"><i class="fa-solid fa-circle-play"></i> Materi Video</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../gallery/galery.html"><i class="fa-solid fa-images"></i> Galery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-users-gear"></i> Fitur lainnya
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../jadwal imsak/jadwal-imsak.html"><i class="fa-solid fa-calendar-days"></i> Jadwal imsakiyah</a></li>
+                <li><a class="dropdown-item" href="../lagu/lagu.html"><i class="fa-solid fa-headphones-simple"></i> Lagu Religi</a></li>
+                <li><a class="dropdown-item" href="../tilawah/tilawah.html"><i class="fa-solid fa-book-quran"></i> Belajar Tilwah</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../profil imam/profil-imam.html"><i class="fa-solid fa-user-tie"></i> Profil Imam</a>
+            </li>
+          </ul>
+           <!-- dark mode -->
+          
+           <input type="submit" class="tombol" value="Terang" onclick="myGelap(false)">
+           <input type="submit" class="tombol" value="Gelap" onclick="myGelap(true)">
+         
+         
+         <!-- akhir dark mode -->
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- akhir nvbar -->
+  
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-fluid " id="tron">
+    <div class="container text-center materi">
+      <h1 class="display-4">Materi Mingguan</h1>
+      <p class="lead">Ilmu itu penting buat kehidupan, maka jangan lupa belajar yah</p>
+    </div>
+    <!-- gelombang -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,160C384,181,480,203,576,181.3C672,160,768,96,864,106.7C960,117,1056,203,1152,197.3C1248,192,1344,96,1392,48L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
+    <div>
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(255,255,255,0.7"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgba(255,255,255,0.5)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgba(255,255,255,0.3)"
+          />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+    <!-- akhir gelombang -->
+  </div>
+  <!-- akhir jumbotron -->
+
+  <!-- nav tambahan -->
+  <div class="container">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+      </ol>
+    </nav>
+  </div>
+  <!-- akhir navtambahan -->
+
+  <!-- konten artikel -->
+  <section class="konten">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card shadow p-3 mb-5 bg-body rounded">
+            <img src="../img/puasa2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Waktu Mustajab untuk Berdoa bagi Umat Muslim</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <!-- modal artikel 1 -->
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Waktu Mustajab untuk Berdoa bagi Umat Muslim</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <!-- isi artikel -->
+                      <iframe src="https://www.intipseleb.com/gaya-hidup/38108-waktu-mustajab-untuk-berdoa" frameborder="0" height="450" width="100%"></iframe>
+                      <!-- akhir artikel -->
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Baca Materi</a>
+              <!-- akhir modal artikel 1 -->
+            </div>
+          </div>
+        </div>
+
+        <!-- konten 2 -->
+        <div class="col-md-4 mb-3">
+          <div class="card shadow p-3 mb-5 bg-body rounded">
+            <img src="../img/puasa1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mengapa kita harus berpuasa dibulan ramadhan</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <!-- modal artikel 2 -->
+              <div class="modal fade" id="artikel2" aria-hidden="true" aria-labelledby="artikel2" tabindex="-1">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="artikel2">Mengapa kita harus berpuasa dibulan ramadhan</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <!-- isi artikel -->
+                      <iframe src="https://jabarekspres.com/berita/2022/04/12/mengapa-kita-harus-berpuasa-di-bulan-ramadhan-berikut-deretan-hikmahnya/" frameborder="0" height="450" width="100%"></iframe>
+                      <!-- akhir artikel -->
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#artikel2" data-bs-toggle="modal">Open second modal</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="artikel2" aria-hidden="true" aria-labelledby="artikel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="artikel2">Modal 2</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#artikel2" data-bs-toggle="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" data-bs-toggle="modal" href="#artikel2" role="button">Baca Materi</a>
+              <!-- akhir modal artikel 2 -->
+            </div>
+          </div>
+        </div>
+        <!-- akhir konten 2 -->
+
+        <!-- konten 3 -->
+        <div class="col-md-4 mb-3">
+          <div class="card shadow p-3 mb-5 bg-body rounded">
+            <img src="../img/puasa3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Keutamaan membaca Al-Qur'an di bulan ramadhan</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <!-- modal artikel 2 -->
+              <div class="modal fade" id="artikel3" aria-hidden="true" aria-labelledby="artikel3" tabindex="-1">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="artikel3">Keutamaan membaca Al-Qur'an di bulan ramadhan</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <!-- isi artikel -->
+                      <iframe src="https://news.detik.com/berita/d-5534805/7-keutamaan-membaca-al-quran-di-bulan-ramadhan" frameborder="0" height="450" width="100%"></iframe>
+                      <!-- akhir artikel -->
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#artikel3" data-bs-toggle="modal">Open second modal</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="artikel3" aria-hidden="true" aria-labelledby="artikel3" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="artikel3">Modal 2</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#artikel3" data-bs-toggle="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" data-bs-toggle="modal" href="#artikel3" role="button">Baca Materi</a>
+              <!-- akhir modal artikel 2 -->
+            </div>
+          </div>
+        </div>
+        <!-- akhir konten 3 -->
+
+        <!-- konten 4 -->
+        <div class="col-md-4 mb-3">
+          <div class="card shadow p-3 mb-5 bg-body rounded">
+            <img src="../img/puasa4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cara agar puasa tidak menjadi beban</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <!-- modal artikel 4 -->
+              <div class="modal fade" id="artikel4" aria-hidden="true" aria-labelledby="artikel4" tabindex="-1">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="artikel4">Cara agar puasa tidak menjadi beban</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <!-- isi artikel -->
+                      <iframe src="https://www.unpak.ac.id/khazanah-ramadhan/agar-melaksanakan-puasa-ramadhan-terasa-ringan-amalkan-6-hal-ini" frameborder="0" height="450" width="100%"></iframe>
+                      <!-- akhir artikel -->
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#artikel4" data-bs-toggle="modal">Open second modal</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="artikel4" aria-hidden="true" aria-labelledby="artikel4" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="artikel4">Modal 2</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#artikel4" data-bs-toggle="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" data-bs-toggle="modal" href="#artikel4" role="button">Baca Materi</a>
+              <!-- akhir modal artikel 4 -->
+            </div>
+          </div>
+        </div>
+        <!-- akhir konten 4 -->
+
+        <!-- konten 5 -->
+        <div class="col-md-4  mb-3">
+          <div class="card shadow p-3 mb-5 bg-body rounded">
+            <img src="../dua.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hal-hal yang membatalkan puasa</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <!-- modal artikel 4 -->
+              <div class="modal fade" id="artikel5" aria-hidden="true" aria-labelledby="artikel5" tabindex="-1">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="artikel5">Hal-hal yang membatalkan puasa</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <!-- isi artikel -->
+                      <iframe src="https://www.detik.com/edu/detikpedia/d-6017442/8-hal-yang-bisa-membatalkan-puasa-ramadan-kamu-apa-saja" frameborder="0" height="450" width="100%"></iframe>
+                      <!-- akhir artikel -->
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#artikel5" data-bs-toggle="modal">Open second modal</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="artikel5" aria-hidden="true" aria-labelledby="artikel5" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="artikel5">Modal 2</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#artikel5" data-bs-toggle="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" data-bs-toggle="modal" href="#artikel5" role="button">Baca Materi</a>
+              <!-- akhir modal artikel 4 -->
+            </div>
+          </div>
+        </div>
+        <!-- akhir konten 5 -->
+
+        <!-- konten 6 -->
+        <div class="col-md-4 mb-3">
+          <div class="card shadow p-3 mb-5 bg-body rounded">
+            <img src="../img/puasa6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kumpulan doa harian selama bulan ramadhan</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <!-- modal artikel 6 -->
+              <div class="modal fade" id="artikel6" aria-hidden="true" aria-labelledby="artikel6" tabindex="-1">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="artikel6">Kumpulan doa harian selama bulan ramadhan</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <!-- isi artikel -->
+                      <iframe src="https://alhidayahdepok.com/kumpulan-doa-harian-selama-bulan-ramadhan-arab-latin-dan-terjemah-arti/" frameborder="0" height="450" width="100%"></iframe>
+                      <!-- akhir artikel -->
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#artikel6" data-bs-toggle="modal">Open second modal</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="artikel5" aria-hidden="true" aria-labelledby="artikel6" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="artikel6">Modal 2</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#artikel6" data-bs-toggle="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" data-bs-toggle="modal" href="#artikel6" role="button">Baca Materi</a>
+              <!-- akhir modal artikel 4 -->
+            </div>
+          </div>
+        </div>
+        <!-- akhir konten 6 -->
+      </div>
+    </div>
+  </section>
+  <!-- akhir konten -->
+
+  <!-- tombol -->
+  <nav aria-label="Page navigation example" class="tombol-bawah">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      
+    </ul>
+  </nav>
+  <!-- akhir tombol -->
+
+
+
+
+  <!-- footer -->
+  <footer class="text-center bg-primary text-white akhir fw-bold" id="foot" >
+    <p>created by <a href="">Feri Anggriawan</a></p>
+  </footer>
+  <!-- akhir footer -->
+
+
+
+
+
+
+  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

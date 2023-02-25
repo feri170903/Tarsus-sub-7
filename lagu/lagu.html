@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/c4e65789d5.js" crossorigin="anonymous"></script>
+    <title>Lagu Religi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="fontawesome/all.js"></script>
+    <link rel="icon" href="../logo sub/sub 7-modified.png" type="image/gif" sizes="18x18">
+    <style>
+      body{
+        transition: 0.5s;
+      }
+      .navbar{
+        background-image: linear-gradient(80deg, red, rgb(47, 47, 141));
+        color: white;
+      }
+      .jumbotron{
+        background-image: url('../img/senja2.jpg');
+        box-sizing: border-box;
+        padding-top: 70px;
+        margin-bottom: 20px;
+        color: white;
+        transition: 0.5s;
+     }
+      .akhir p a{
+        color: white;
+      }
+      .akhir{
+        background-image: linear-gradient(80deg, rgb(228, 228, 11), red);
+        padding: 10px;
+      }
+      .judul-lagu{
+        font-size: medium;
+      }
+      .item{
+        border-radius: 15px;
+        padding: 10px;
+      }
+      .drop-lagu{
+        border-radius: 15px;
+        padding: 10px;
+        margin-bottom: 50px;
+      }
+      
+       /* tombol gelap terang */
+       .tombol{
+            border-radius: 10px;
+            padding: 5px;
+            outline: none;
+            background-color: rgb(156, 156, 137);
+            text-shadow: 4px 3px 2px black;
+            color:white;
+            cursor: pointer;
+            box-shadow: 4px 3px 2px black;
+        }
+        .tombol:hover{
+            background-color: rgb(41, 78, 240);
+            color: white;
+        }
+
+        /* dark mode */
+        #dark{
+          background-color: rgb(26, 22, 22);
+          color: white;
+        }
+        #dark .konten{
+          color: black;
+        }
+        #dark #head{
+          background-image: linear-gradient(50deg, rgb(70, 55, 55), black);
+          color: white;
+          
+        }
+        #dark #foot{
+          background-image: linear-gradient(50deg, rgb(70, 55, 55), black);
+          color: white;
+          
+        }
+        #dark #tron{
+          background-image: url('../img/tron-lagu.jpg');
+          transition: 0.5s;
+        }
+        #dark .lagu{
+          color: black;
+        }
+        /* akhir dark mode */
+        /* gelombang */
+        .waves {
+          position: relative;
+          width: 100%;
+          height: 15vh;
+          margin-bottom: -7px;
+          /*Fix for safari gap*/
+          min-height: 100px;
+          max-height: 150px;
+        }
+        .parallax > use {
+          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+        }
+
+        .parallax > use:nth-child(1) {
+          animation-delay: -2s;
+          animation-duration: 7s;
+        }
+
+        .parallax > use:nth-child(2) {
+          animation-delay: -3s;
+          animation-duration: 10s;
+        }
+
+        .parallax > use:nth-child(3) {
+          animation-delay: -4s;
+          animation-duration: 13s;
+        }
+
+        .parallax > use:nth-child(4) {
+          animation-delay: -5s;
+          animation-duration: 20s;
+        }
+
+        @keyframes move-forever {
+          0% {
+            transform: translate3d(-90px, 0, 0);
+          }
+
+          100% {
+            transform: translate3d(85px, 0, 0);
+          }
+        }
+      /* akhir gelombang */
+    </style>
+  </head>
+  <body>
+  <!-- navbar -->
+  <section >
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="head">
+      <div class="container">
+        <a class="navbar-brand" href="#">SUB PITU 7</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"><i class="fa-solid fa-house-user"></i> Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book"></i> Materi</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../Artikel/materi.html"><i class="fa-brands fa-readme"></i> Materi Artikel</a></li>
+                <li><a class="dropdown-item" href="../materi video/materiVideo.html"><i class="fa-solid fa-circle-play"></i> Materi Video</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../gallery/galery.html"><i class="fa-solid fa-images"></i> Galery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-users-gear"></i>  Fitur lainnya
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../jadwal imsak/jadwal-imsak.html"><i class="fa-solid fa-calendar-days"></i> Jadwal imsakiyah</a></li>
+                <li><a class="dropdown-item active" href="../lagu/lagu.html"><i class="fa-solid fa-headphones-simple"></i> Lagu Religi</a></li>
+                <li><a class="dropdown-item" href="../tilawah/tilawah.html"><i class="fa-solid fa-book-quran"></i> Belajar Tilwah</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../profil imam/profil-imam.html"><i class="fa-solid fa-user-tie"></i> Profil Imam</a>
+            </li>
+          </ul>
+          <!-- dark mode -->
+          
+          <input type="submit" class="tombol" value="Terang" onclick="myGelap(false)">
+          <input type="submit" class="tombol" value="Gelap" onclick="myGelap(true)">
+        
+        
+          <!-- akhir dark mode -->
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- akhir nvbar -->
+  
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-fluid " id="tron">
+    <div class="container text-center materi">
+      <h1 class="display-4">Lagu Religi</h1>
+      <p class="lead">dengerin lagu religi terbaik tanah air</p>
+    </div>
+    <!-- gelombang -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,122.7C384,139,480,181,576,181.3C672,181,768,139,864,112C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
+    <div>
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(255,255,255,0.7"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgba(255,255,255,0.5)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgba(255,255,255,0.3)"
+          />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+    <!-- akhir gelombang -->
+  </div>
+  <!-- akhir jumbotron -->
+
+  <!-- dropdown menu -->
+  <nav class="container navbar-expand-lg bg-dark navbar-dark drop-lagu">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              list item
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="#">terbaru</a></li>
+              <li><a class="dropdown-item" href="#">karya anak bangsa</a></li>
+              <li><a class="dropdown-item" href="#">cover</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- akhir dropdown -->
+
+  <!-- isi lagu -->
+  <!-- <div class="accordion accordion-flush container mb-5 konten" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <b class="judul-lagu">wali band - until jannah</b>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <audio controls class="col-lg">
+            <source src="lagu/wali-until-jannah.webm" type="audio/webm">
+          </audio>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse mb-5" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          lagu religi dari wali band
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <b class="judul-lagu">wali band - until jannah</b>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <audio controls class="col-lg">
+            <source src="" type="video/mp3">
+          </audio>
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <b class="judul-lagu">wali band - until jannah</b>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <audio controls class="col-lg">
+            <source src="" type="video/webm">
+          </audio>
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <b class="judul-lagu">wali band - until jannah</b>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <audio controls class="col-lg">
+            <source src="lagu/wali-until-jannah.webm" type="audio/webm">
+          </audio>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse mb-5" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <b class="judul-lagu">wali band - until jannah</b>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <audio controls class="col-lg">
+            <source src="lagu/wali-until-jannah.webm" type="audio/webm">
+          </audio>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse mb-5" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <b class="judul-lagu">wali band - until jannah</b>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <audio controls class="col-lg">
+            <source src="lagu/wali-until-jannah.webm" type="audio/webm">
+          </audio>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse mb-5" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <b class="judul-lagu">wali band - until jannah</b>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <audio controls class="col-lg">
+            <source src="lagu/wali-until-jannah.webm" type="audio/webm">
+          </audio>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse mb-5" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <b class="judul-lagu">wali band - until jannah</b>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <audio controls class="col-lg">
+            <source src="lagu/wali-until-jannah.webm" type="audio/webm">
+          </audio>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse mb-5" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+      </div>
+    </div>
+  </div>
+  akhir isi lagu -->
+
+
+
+<!-- isi konten lagu new -->
+<section class="mb-5 rounded lagu">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/wali.png" class="card-img-top" alt="...">
+          <h4 class="text-center">Tobat Maksiat</h4>
+          <small class="text-center">wali band</small>
+          <audio src="musik/wali/tobat maksiat - wali.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a href="https://www.chordtela.com/2014/09/wali-tomat-tobat-maksiat.html" target="_blank">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/maher zain.jpg" class="card-img-top" alt="...">
+          <h4 class="text-center">Ingsya Allah</h4>
+          <small class="text-center">Maher Zain</small>
+          <audio src="musik/maher zain/insya allah - maher zain.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a target="_blank" href="https://tabs.ultimate-guitar.com/tab/maher-zain/insyaallah-chords-994152">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/maher zain.jpg" class="card-img-top" alt="...">
+          <h4 class="text-center">Ramadhan</h4>
+          <small class="text-center">Maher Zain</small>
+          <audio src="musik/maher zain/ramadhan - maher zain.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse1">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a target="_blank" href="https://www.chordtela.com/2021/05/maher-zain-ramadan-ramadhan.html">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/ungu.jpg" class="card-img-top" alt="...">
+          <h4 class="text-center">Dengan nafasmu</h4>
+          <small class="text-center">ungu band</small>
+          <audio src="musik/ungu/dengan nafasmu - ungu.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse1">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a target="_blank" href="https://www.chordtela.com/2014/11/dengan-nafasmu-ungu.html">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/wali.png" class="card-img-top" alt="...">
+          <h4 class="text-center">Abatasa</h4>
+          <small class="text-center">wali band</small>
+          <audio src="musik/wali/abatsa - wali.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a target="_blank" href="https://www.chordtela.com/2014/09/wali-abatasa.html">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/wali.png" class="card-img-top" alt="...">
+          <h4 class="text-center">Salam 5 waktu</h4>
+          <small class="text-center">wali band</small>
+          <audio src="musik/wali/salam5waktu - wali.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a target="_blank" href="https://www.chordtela.com/2016/05/wali-salam-5-waktu.html">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/ungu.jpg" class="card-img-top" alt="...">
+          <h4 class="text-center">Andai ku tahu</h4>
+          <small class="text-center">ungu band</small>
+          <audio src="musik/ungu/andai ku tahu - ungu.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a target="_blank" href="https://www.chordtela.com/2014/10/ungu-andai-ku-tahu.html">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/wali.png" class="card-img-top" alt="...">
+          <h4 class="text-center">Trending taufiq wal hidayah</h4>
+          <small class="text-center">wali band</small>
+          <audio src="musik/wali/taufiq wal hidayah - wali.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a target="_blank" href="https://www.chordtela.com/2022/03/wali-trending-taufiq-wal-hidayah.html">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/maher zain.jpg" class="card-img-top" alt="...">
+          <h4 class="text-center">Sepanjang Hidup</h4>
+          <small class="text-center">Maher Zain</small>
+          <audio src="musik/maher zain/sepanjang hidup - maher zain.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading9">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a target="_blank" href="https://www.chordtela.com/2015/04/maher-zain-sepanjang-hidup.html">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/wali.png" class="card-img-top" alt="...">
+          <h4 class="text-center">Until Jannah</h4>
+          <small class="text-center">wali band</small>
+          <audio src="musik/wali/until jannah - wali.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a target="_blank" href="https://www.chordtela.com/2021/10/wali-until-jannah.html">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/ungu.jpg" class="card-img-top" alt="...">
+          <h4 class="text-center">Surga Mu</h4>
+          <small class="text-center">ungu band</small>
+          <audio src="musik/ungu/surga mu - ungu.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading11">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapse11">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse11" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a target="_blank" href="https://www.chordtela.com/2014/09/ungu-surgamu.html">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-lg p-3">
+          <img src="img/wali.png" class="card-img-top" alt="...">
+          <h4 class="text-center">Ngantri ke Sorga</h4>
+          <small class="text-center">wali band</small>
+          <audio src="musik/wali/ngantri ke sorga - wali.mp3" type="audio/mp3" controls></audio>
+          <!-- tombol lirik -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading12">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">
+                  Lirik Lagu dan Kord Gitar
+                </button>
+              </h2>
+              <div id="flush-collapse12" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body lirik"><a target="_blank" href="https://www.chordtela.com/2015/06/wali-ngantri-ke-sorga.html">Klik disini</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir lirik -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- akhir lagu new -->
+
+ <!-- tombol -->
+ <nav aria-label="Page navigation example" id="tombol" class="mb-5">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="lagu.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="lagu1.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="lagu2.html">3</a></li>
+  </ul>
+</nav>
+<!-- akhir tombol -->
+
+
+  <!-- footer -->
+  <footer class="text-center bg-primary text-white akhir fw-bold" id="foot" >
+    <p>created by <a href="">Feri Anggriawan</a></p>
+  </footer>
+  <!-- akhir footer -->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
+
+
